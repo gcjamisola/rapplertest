@@ -5,8 +5,8 @@
         "ecmaVersion": 6,
         "sourceType": "module",
         "ecmaFeatures": {
-        "modules": true,
-        "experimentalObjectRestSpread": true
+            "modules": true,
+            "experimentalObjectRestSpread": true
         }
     },
     "plugins": [
@@ -35,6 +35,8 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+
+        "react/sort-comp": 1
     }
 }
