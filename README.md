@@ -1,6 +1,4 @@
-# Project Title
-
-Rappler - Practical Exam
+# Rappler - Practical Exam
 
 ### Installing
 

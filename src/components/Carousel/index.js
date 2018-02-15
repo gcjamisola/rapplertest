@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 
 import { 
   CarouselContainer, 
+  ReadMore,
   StyledSlider,
   SliderElement, 
   SliderImage, 
@@ -20,7 +21,7 @@ class Carousel extends Component {
       storyArray: []
     }
 
-    this.sliderElement = this.sliderElement.bind(this);
+    this._sliderElement = this._sliderElement.bind(this);
   }
 
   componentWillReceiveProps(nextProps){
@@ -29,14 +30,20 @@ class Carousel extends Component {
     }
   }
 
-  sliderElement(arr) {
+  _sliderElement(arr) {
     return arr.map((value, key) => {
+      const { 
+        full: imgUrl, 
+        title, 
+        metadesc: storyDesc } = value;
+
       return (
         <div key={key}>
-          <SliderImage src={`${value.full}`} />
+          <SliderImage src={`${imgUrl}`} />
           <SliderElement>
-            <SliderTitle>{`${value.title}`}</SliderTitle>
-            <SliderDescription>{`${value.metadesc}`}</SliderDescription>
+            <SliderTitle>{`${title}`}</SliderTitle>
+            <SliderDescription>{`${storyDesc}`}</SliderDescription>
+            <ReadMore>> Read More...</ReadMore>
           </SliderElement>
         </div>
       );
@@ -50,11 +57,9 @@ class Carousel extends Component {
     return (
       <CarouselContainer>
         <StyledSlider>
-          <Slider {...settings}>
-          {
-            this.sliderElement(storyArray)
-          }
-          </Slider>
+            <Slider {...settings}>
+              { this._sliderElement(storyArray)  }
+            </Slider>
         </StyledSlider>
       </CarouselContainer>
     );

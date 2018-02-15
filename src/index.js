@@ -1,5 +1,4 @@
 require('./index.config');
-import './styles/style.scss'
 
 import React, { Component } from 'react';
 import { render } from 'react-dom';
@@ -13,11 +12,11 @@ class App extends Component {
     constructor(props) {
         super(props);
 
-        this.getStories = this.getStories.bind(this);
+        this._getStories = this._getStories.bind(this);
 
         this.state = {
             settings: {
-                arrows: !window.isMobile,
+                arrows: true,
                 dots: !window.isMobile,
                 infinite: true,
                 speed: 500,
@@ -26,15 +25,16 @@ class App extends Component {
                 slidesToScroll: 1,
                 cssEase: 'linear',
                 centerMode: true,
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 10000,
-                swipeToSlide: window.isMobile
+                swipeToSlide: window.isMobile,
+                centerPadding: '0px'
             },
             stories: []
         }
     }
 
-    getStories() {
+    _getStories() {
         return fetch('https://svc.rappler.com/p/topstories')
         .then((response) => response.json())
         .then((response) => {
@@ -55,7 +55,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        this.getStories();
+        this._getStories();
     }
 
     render() {
