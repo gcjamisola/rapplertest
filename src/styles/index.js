@@ -10,4 +10,6 @@ body {
 `;
 
 export * from './CarouselContainer';
+export * from './Footer';
+export * from './Header';
 export * from './Wrapper';

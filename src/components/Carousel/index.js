@@ -11,7 +11,7 @@ import {
   SliderImage, 
   SliderTitle, 
   SliderDescription 
-} from '../../styles/styled-components';
+} from '../../styles';
 
 class Carousel extends Component { 
   constructor(props) {

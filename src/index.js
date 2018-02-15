@@ -5,8 +5,10 @@ import { render } from 'react-dom';
 
 import _ from 'lodash';
 
+import { PlainLayout } from './layouts';
+
 import Carousel from './components/Carousel';
-import { Wrapper } from './styles/styled-components';
+import { rGetStories } from './resources/stories';
 
 class App extends Component {
     constructor(props) {
@@ -17,27 +19,25 @@ class App extends Component {
         this.state = {
             settings: {
                 arrows: true,
-                dots: !window.isMobile,
-                infinite: true,
-                speed: 500,
-                fade: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                cssEase: 'linear',
-                centerMode: true,
                 autoplay: false,
                 autoplaySpeed: 10000,
+                centerMode: true,
+                centerPadding: '0px',
+                cssEase: 'linear',
+                dots: !window.isMobile,
+                fade: true,
+                infinite: true,
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                speed: 500,
                 swipeToSlide: window.isMobile,
-                centerPadding: '0px'
             },
             stories: []
         }
     }
 
     _getStories() {
-        return fetch('https://svc.rappler.com/p/topstories')
-        .then((response) => response.json())
-        .then((response) => {
+        return rGetStories().then((response) => {
             let tmpArr = [];
 
             const destructureObj = (obj) => {
@@ -65,9 +65,9 @@ class App extends Component {
         } = this.state;
 
         return (
-            <Wrapper>
+            <PlainLayout>
                 <Carousel settings={settings} stories={stories}/>
-            </Wrapper>
+            </PlainLayout>
         );
     }
 }
