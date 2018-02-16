@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c0 {
+  background: #419be0;
+  color: #333;
+  height: 475px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+@media (max-width:992px) {
+  .c0 {
+    width: 88%;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    height: 350px;
+    width: 100%;
+  }
+}
+
+@media (max-width:376px) {
+  .c0 {
+    height: 300px;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`it works 2`] = `
+.c0 {
+  bottom: 1em;
+  color: rgba(44,44,44,0.75);
+  display: none;
+  font-weight: bold;
+  position: absolute;
+  right: 1em;
+}
+
+@media (max-width:572px) {
+  .c0 {
+    display: block;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`it works 3`] = `
+.c0 .slick-initialized.slick-slider {
+  height: 450px;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    height: 400px;
+  }
+}
+
+@media (max-width:572px) {
+  .c0 {
+    height: 375px;
+  }
+}
+
+@media (max-width:376px) {
+  .c0 {
+    height: 300px;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`it works 4`] = `
+.c0 {
+  background-color: rgba(255,255,255,.25);
+  color: black;
+  height: 150px;
+  position: relative;
+  top: -10em;
+  width: 100%;
+}
+
+@media (max-width:572px) {
+  .c0 {
+    height: 100px;
+    top: -7em;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`it works 5`] = `
+.c0 {
+  height: 450px;
+  width: 100%;
+}
+
+@media (max-width:992px) {
+  .c0 {
+    height: 400px;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 {
+    height: 350px;
+  }
+}
+
+@media (max-width:572px) {
+  .c0 {
+    height: 300px;
+  }
+}
+
+<img
+  className="c0"
+/>
+`;
+
+exports[`it works 6`] = `
+.c0 {
+  color: #000;
+  left: 1em;
+  position: relative;
+  width: 95%;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  top: 1em;
+}
+
+@media (max-width:572px) {
+  .c0 {
+    font-size: 1.25em;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`it works 7`] = `
+.c0 {
+  color: #000;
+  left: 1em;
+  position: relative;
+  width: 95%;
+  bottom: -5em;
+  margin-left: .5em;
+}
+
+@media (max-width:572px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;

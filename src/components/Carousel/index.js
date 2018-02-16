@@ -3,23 +3,23 @@ import PropTypes from 'prop-types';
 
 import Slider from 'react-slick';
 
-import { 
-  CarouselContainer, 
+import {
+  CarouselContainer,
   ReadMore,
   StyledSlider,
-  SliderElement, 
-  SliderImage, 
-  SliderTitle, 
-  SliderDescription 
+  SliderElement,
+  SliderImage,
+  SliderTitle,
+  SliderDescription
 } from '../../styles';
 
-class Carousel extends Component { 
+class Carousel extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      storyArray: []
-    }
+this.state = {
+storyArray: []
+}
 
     this._sliderElement = this._sliderElement.bind(this);
   }
@@ -32,9 +32,9 @@ class Carousel extends Component {
 
   _sliderElement(arr) {
     return arr.map((value, key) => {
-      const { 
-        full: imgUrl, 
-        title, 
+      const {
+        full: imgUrl,
+        title,
         metadesc: storyDesc } = value;
 
       return (

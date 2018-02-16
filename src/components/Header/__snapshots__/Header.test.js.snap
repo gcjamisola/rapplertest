@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header/> renders <Header/> component 1`] = `
+<div>
+  <styled.ul>
+    <styled.li>
+      Home
+    </styled.li>
+    <styled.li>
+      About
+    </styled.li>
+    <styled.li>
+      Gallery
+    </styled.li>
+    <styled.li>
+      Contact Us
+    </styled.li>
+  </styled.ul>
+</div>
+`;

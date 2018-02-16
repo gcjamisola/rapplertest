@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.c0 {
+  font-weight: bold;
+  padding: 10px;
+  -webkit-text-align: center;
+  text-align: center;
+}
+
+<div
+  className="c0"
+/>
+`;

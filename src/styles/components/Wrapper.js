@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import * as utils from './utils';
+import * as utils from '../utils';
 
 const { media } = utils;
 
@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 
     ${media.tablet`
         margin: 0;
-        width: 100%;
+        width: 85%;
     `}
 `;
 

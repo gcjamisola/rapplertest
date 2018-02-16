@@ -9,7 +9,7 @@ body {
 }
 `;
 
-export * from './CarouselContainer';
-export * from './Footer';
-export * from './Header';
-export * from './Wrapper';
+export * from './components/CarouselContainer';
+export * from './components/Footer';
+export * from './components/Header';
+export * from './components/Wrapper';
