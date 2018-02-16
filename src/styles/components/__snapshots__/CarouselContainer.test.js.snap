@@ -4,21 +4,26 @@ exports[`it works 1`] = `
 .c0 {
   background: #419be0;
   color: #333;
-  height: 475px;
+  height: 450px;
   margin: 0 auto;
   padding: 40px;
 }
 
 @media (max-width:992px) {
   .c0 {
-    width: 88%;
+    height: 410px;
   }
 }
 
 @media (max-width:768px) {
   .c0 {
     height: 350px;
-    width: 100%;
+  }
+}
+
+@media (max-width:572px) {
+  .c0 {
+    height: 310px;
   }
 }
 
@@ -35,17 +40,29 @@ exports[`it works 1`] = `
 
 exports[`it works 2`] = `
 .c0 {
-  bottom: 1em;
   color: rgba(44,44,44,0.75);
   display: none;
   font-weight: bold;
-  position: absolute;
-  right: 1em;
 }
 
 @media (max-width:572px) {
   .c0 {
-    display: block;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: right;
+    -webkit-justify-content: right;
+    -ms-flex-pack: right;
+    justify-content: right;
+    margin-left: auto;
   }
 }
 
@@ -59,21 +76,27 @@ exports[`it works 3`] = `
   height: 450px;
 }
 
+@media (max-width:992px) {
+  .c0 .slick-initialized.slick-slider {
+    height: 410px;
+  }
+}
+
 @media (max-width:768px) {
-  .c0 {
-    height: 400px;
+  .c0 .slick-initialized.slick-slider {
+    height: 360px;
   }
 }
 
 @media (max-width:572px) {
-  .c0 {
-    height: 375px;
+  .c0 .slick-initialized.slick-slider {
+    height: 305px;
   }
 }
 
 @media (max-width:376px) {
-  .c0 {
-    height: 300px;
+  .c0 .slick-initialized.slick-slider {
+    height: 325px;
   }
 }
 
@@ -86,6 +109,13 @@ exports[`it works 4`] = `
 .c0 {
   background-color: rgba(255,255,255,.25);
   color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 150px;
   position: relative;
   top: -10em;
@@ -136,18 +166,29 @@ exports[`it works 5`] = `
 exports[`it works 6`] = `
 .c0 {
   color: #000;
-  left: 1em;
-  position: relative;
-  width: 95%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 1em;
   font-size: 1.5em;
   font-weight: bold;
-  margin: 0;
-  top: 1em;
 }
 
 @media (max-width:572px) {
   .c0 {
-    font-size: 1.25em;
+    font-size: 1em;
   }
 }
 
@@ -159,11 +200,22 @@ exports[`it works 6`] = `
 exports[`it works 7`] = `
 .c0 {
   color: #000;
-  left: 1em;
-  position: relative;
-  width: 95%;
-  bottom: -5em;
-  margin-left: .5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 1em;
 }
 
 @media (max-width:572px) {

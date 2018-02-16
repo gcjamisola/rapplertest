@@ -19,7 +19,7 @@ class App extends Component {
         this.state = {
             settings: {
                 arrows: true,
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 10000,
                 centerMode: true,
                 centerPadding: '0px',
@@ -42,7 +42,7 @@ class App extends Component {
 
             const destructureObj = (obj) => {
                 const image =  _.pick(_.head(_.pick(obj, ['images']).images), 'full')
-                
+
                 return _.assign(_.pick(obj, ['title','metadesc']), image);
             };
 
@@ -73,6 +73,6 @@ class App extends Component {
 }
 
 render(
-    <App/>, 
+    <App/>,
     document.getElementById('root')
 );

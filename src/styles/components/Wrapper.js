@@ -7,9 +7,9 @@ const Wrapper = styled.div`
     margin: 0 auto;
     width: 90%;
 
-    ${media.tablet`
+    ${media.phablet`
         margin: 0;
-        width: 85%;
+        width: 100%;
     `}
 `;
 

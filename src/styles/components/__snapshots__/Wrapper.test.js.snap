@@ -6,10 +6,10 @@ exports[`it works 1`] = `
   width: 90%;
 }
 
-@media (max-width:768px) {
+@media (max-width:572px) {
   .c0 {
     margin: 0;
-    width: 85%;
+    width: 100%;
   }
 }
 

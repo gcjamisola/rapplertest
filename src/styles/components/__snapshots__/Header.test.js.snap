@@ -2,8 +2,18 @@
 
 exports[`it works 1`] = `
 .c0 {
-  -webkit-text-align: right;
-  text-align: right;
+  background: #232d3b;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 <ul
@@ -13,11 +23,23 @@ exports[`it works 1`] = `
 
 exports[`it works 2`] = `
 .c0 {
+  color: aliceblue;
   cursor: pointer;
-  display: inline-block;
+  border-bottom: none;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   list-style-type: none;
-  margin-left: 10px;
+  margin: auto 0;
+  margin-right: 1em;
   padding: 5px 10px;
+  -webkit-transition: border-bottom 0.2s ease;
+  transition: border-bottom 0.2s ease;
+}
+
+.c0:hover {
+  border-bottom: 2px solid #61ccff;
 }
 
 <li

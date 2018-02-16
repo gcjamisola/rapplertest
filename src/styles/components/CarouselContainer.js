@@ -6,31 +6,31 @@ const { media } = utils;
 const CarouselContainer = styled.div`
     background: #419be0;
     color: #333;
-    height: 475px;
+    height: 450px;
     margin: 0 auto;
     padding: 40px;
 
-    ${media.desktop`width: 88%;`}
-    ${media.tablet`
-        height: 350px;
-        width: 100%;
-    `}
+		${media.desktop`height: 410px;`}
+		${media.tablet`height: 350px;`}
+		${media.phablet`height: 310px;`}
     ${media.phone`height: 300px;`}
 `;
 
 const StyledSlider = styled.div`
     .slick-initialized.slick-slider {
-        height: 450px;
+				height: 450px;
+				${media.desktop`height: 410px;`}
+				${media.tablet`height: 360px;`}
+				${media.phablet`height: 305px;`}
+				${media.phone`height: 325px`}
     }
-
-    ${media.tablet`height: 400px;`}
-    ${media.phablet`height: 375px;`}
-    ${media.phone`height: 300px`}
 `;
 
 const SliderElement = styled.div`
     background-color: rgba(255, 255, 255, .25);
-    color: black;
+		color: black;
+		display: flex;
+    flex-direction: column;
     height: 150px;
     position: relative;
     top: -10em;
@@ -53,50 +53,44 @@ const SliderImage = styled.img`
 
 const SliderText = styled.div`
     color: #000;
-    left: 1em;
-    position: relative;
-    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex: 1;
+    margin-left: 1em;
 `;
 
 const SliderTitle = SliderText.extend`
     font-size: 1.5em;
     font-weight: bold;
-    margin: 0;
-    top: 1em;
 
-    ${media.phablet`
-        font-size: 1.25em;
-    `}
+    ${media.phablet`font-size: 1em;`}
 `;
 
 const SliderDescription = SliderText.extend`
-    bottom: -5em;
-    margin-left: .5em;
-
-    ${media.phablet`
-        display: none;
-    `}
+    ${media.phablet`display: none;`}
 `;
 
 const ReadMore = styled.div`
-    bottom: 1em;
     color: rgba(44, 44, 44, 0.75);
     display: none;
     font-weight: bold;
-    position: absolute;
-    right: 1em;
 
     ${media.phablet`
-        display: block;
+			align-items: center;
+			display: flex;
+			flex: 1;
+			justify-content: right;
+			margin-left: auto;
     `}
 `;
 
-export { 
-    CarouselContainer, 
+export {
+    CarouselContainer,
     ReadMore,
     StyledSlider,
-    SliderElement, 
-    SliderImage, 
-    SliderTitle, 
+    SliderElement,
+    SliderImage,
+    SliderTitle,
     SliderDescription
  };
